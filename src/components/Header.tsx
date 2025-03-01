@@ -18,7 +18,6 @@ const Header: React.FC = () => {
   );
 };
 
-// Type-safe CSS styles
 const styles: { [key: string]: CSSProperties } = {
   header: {
     display: "flex",
@@ -26,7 +25,7 @@ const styles: { [key: string]: CSSProperties } = {
     justifyContent: "space-between",
     alignItems: "center",
     padding: "10px 0px",
-    backgroundColor: "#272727",
+ 
     color: "white",
   },
   logo: {
@@ -44,7 +43,7 @@ const styles: { [key: string]: CSSProperties } = {
     position: "absolute",
     top: "50px",
     right: "10px",
-    backgroundColor: "#272727",
+
     padding: "10px",
     borderRadius: "5px",
   },
@@ -63,10 +62,5 @@ const styles: { [key: string]: CSSProperties } = {
   },
 };
 
-// Responsive styling (optional, should be handled with CSS ideally)
-if (window.innerWidth < 768) {
-  styles.nav.display = "none";
-  styles.menuButton.display = "block";
-}
 
 export default Header;

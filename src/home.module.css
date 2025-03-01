@@ -93,3 +93,62 @@ h3.sectionTitle {
     width:100px;
 }
 
+.projects {
+    width: 100%;
+    max-width: 800px;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.projectItem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.projectImage {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.projectImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projectContent {
+    flex: 1;
+    text-align: left;
+}
+
+.projectTitle {
+    font-family: "JakartaSansBold", sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.projectContent p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.projectContent ul {
+    padding-left: 20px;
+}
+
+.projectContent li {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
