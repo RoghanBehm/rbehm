@@ -1,4 +1,4 @@
-
+import Home from './home';
 import Header from './Header';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -10,6 +10,7 @@ function App() {
     <BrowserRouter>
       <div>
         <Header />
+        <Home />
       </div>
     </BrowserRouter>
   )

@@ -1,0 +1,27 @@
+.profile {
+    display: flex;
+}
+
+.right {
+    max-width: 40em;
+    text-align: left;
+}
+
+.outer {
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    padding-right: 7em;
+    display: flex;
+    align-items: center;
+}
+
+.profilePic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100px;
+
+}
