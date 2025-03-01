@@ -152,3 +152,47 @@ h3.sectionTitle {
     font-size: 0.9rem;
     margin-bottom: 5px;
 }
+
+.experience {
+    width: 100%;
+    max-width: 800px;
+}
+
+.experienceContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+
+.experienceItem {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+
+.jobTitle {
+    font-family: "JakartaSansBold", sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.company {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.experienceItem p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.experienceItem ul {
+    padding-left: 20px;
+}
+
+.experienceItem li {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}

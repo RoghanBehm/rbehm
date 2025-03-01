@@ -100,6 +100,26 @@ function Home() {
 
             <div className={styles.divider} />
 
+                        {/* Work Experience */}
+                        <div className={styles.experience}>
+                <h2 className={styles.sectionTitle}>Work Experience</h2>
+                <div className={styles.experienceContainer}>
+
+                    {/* Job 1 */}
+                    <div className={styles.experienceItem}>
+                        <div className={styles.jobTitle}>Junior Web Developer (Wordpress)</div>
+                        <div className={styles.company}>Sol Technology</div>
+                        <ul>
+                            <li>Took full ownership of web development operations for three months in the absence of the Lead Developer, making independent technical and design decisions.</li>
+                            <li>Built, updated, and maintained custom WordPress websites, tailoring solutions to meet client needs.</li>
+                            <li>Developed interactive site features using PHP, JavaScript, and jQuery, ensuring dynamic and functional user experiences.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
         </div>
 
     )

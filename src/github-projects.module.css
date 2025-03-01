@@ -1,0 +1,43 @@
+.projects {
+    width: 100%;
+    
+}
+
+.projectsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projectItem {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    width:23em;
+}
+
+.projectTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4da8da;
+    text-decoration: none;
+}
+
+.projectTitle:hover {
+    text-decoration: underline;
+}
+
+.projectContent p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.language {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #bbb;
+}
