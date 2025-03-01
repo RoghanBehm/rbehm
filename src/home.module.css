@@ -1,5 +1,22 @@
-.profile {
+.container {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+}
+
+.sectionTitle {
+    font-family: "JakartaSansBold", sans-serif;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 10px;
+}
+
+h3.sectionTitle {
+    font-size: 1rem;
 }
 
 .right {
@@ -9,11 +26,12 @@
 
 .outer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .left {
-    padding-right: 7em;
+    padding-right: 6em;
     display: flex;
     align-items: center;
 }
@@ -23,5 +41,55 @@
     height: 150px;
     object-fit: cover;
     border-radius: 100px;
-
 }
+
+.divider {
+    width: 50%;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+}
+
+.educationContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+}
+
+.row {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start; 
+    gap: 30px; 
+}
+
+.year {
+    min-width: 150px; 
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.degree {
+    font-family: "JakartaSansReg", sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    flex: 1;
+}
+
+.degreeContent {
+    padding-left: 7.5em;
+}
+
+.degreeContent p {
+    text-align: left;
+}
+
+.education {
+    width: 100%;
+    max-width: 800px;
+}
+
+.yearContent {
+    width:100px;
+}
+

@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "JakartaSans", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -51,6 +51,27 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+@font-face {
+  font-family: "JakartaSans";
+  src: url("./fonts/PlusJakartaSans-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JakartaSansReg";
+  src: url("./fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JakartaSansBold";
+  src: url("./fonts/PlusJakartaSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @media (prefers-color-scheme: light) {

@@ -1,5 +1,5 @@
 import Home from './home';
-import Header from './Header';
+import Header from './components/Header';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './App.css'
@@ -10,7 +10,9 @@ function App() {
     <BrowserRouter>
       <div>
         <Header />
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </div>
     </BrowserRouter>
   )
