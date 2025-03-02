@@ -24,12 +24,12 @@ function Home() {
                     <h3 className={styles.sectionTitle}>Currently studying</h3>
                     <div className={styles.row}>
                         <div className={styles.yearContent}>
-                            <span className={styles.year}>2023 - 2025</span>
-                            <p>Grad. Spring</p>
+                            <p className={styles.year}>2023 - 2025</p>
+                            <p className={styles.year}>Grad. Spring</p>
                         </div>
 
                         <div className={styles.degreeContent}>
-                            <span className={styles.degree}>Bachelor of Information Technology (Computer Science)</span>
+                            <p className={styles.degree}>Bachelor of Information Technology (Computer Science)</p>
                             <p>Queensland University of Technology</p>
                         </div>
 
@@ -37,10 +37,10 @@ function Home() {
                     <h3 className={styles.sectionTitle}>Completed</h3>
                     <div className={styles.row}>
                         <div className={styles.yearContent}>
-                            <span className={styles.year}>2018 - 2022</span>
+                            <p className={styles.year}>2018 - 2022</p>
                         </div>
                         <div className={styles.degreeContent}>
-                            <span className={styles.degree}>Bachelor of Arts (History and Political Science)</span>
+                            <p className={styles.degree}>Bachelor of Arts (History and Political Science)</p>
                             <p>University of Queensland</p>
 
                         </div>
@@ -62,7 +62,7 @@ function Home() {
                             <img src="./assets/minesweeper.png" alt="Minesweeper Multiplayer Game" />
                         </div>
                         <div className={styles.projectContent}>
-                            <span className={styles.projectTitle}>Networked Multiplayer Minesweeper</span>
+                            <p className={styles.projectTitle}>Networked Multiplayer Minesweeper</p>
                             <p>
                                 Developed a real-time 1v1 multiplayer Minesweeper game using Boost.Asio for networking and SDL2 for rendering.
                                 Features an interactive UI, custom game logic, and synchronized state updates.
@@ -71,6 +71,7 @@ function Home() {
                                 <li>Implemented efficient asynchronous networking using Boost.Asio.</li>
                                 <li>Designed and rendered a custom game interface with SDL2.</li>
                                 <li>Handled game state synchronization between two players.</li>
+                                <li>Reverse engineerined Minesweeper gameplay mechanics, including mine placement, win/loss detection, cascading reveals, and state management.</li>
                             </ul>
                         </div>
                     </div>
@@ -81,7 +82,7 @@ function Home() {
                             <img src="./assets/fuel-tracker.png" alt="Fuel Price Tracker App" />
                         </div>
                         <div className={styles.projectContent}>
-                            <span className={styles.projectTitle}>Fuel Price Tracker</span>
+                            <p className={styles.projectTitle}>Fuel Price Tracker</p>
                             <p>
                                 Collaborated in a team-based agile development environment to create a JavaFX application for tracking and comparing fuel prices.
                                 We followed Scrum principles, holding weekly stand-ups, working in sprints, and using Trello for task management.
@@ -108,6 +109,7 @@ function Home() {
                     {/* Job 1 */}
                     <div className={styles.experienceItem}>
                         <div className={styles.jobTitle}>Junior Web Developer (Wordpress)</div>
+                        <div className={styles.company}>April 2024 - October 2024</div>
                         <div className={styles.company}>Sol Technology</div>
                         <ul>
                             <li>Took full ownership of web development operations for three months in the absence of the Lead Developer, making independent technical and design decisions.</li>

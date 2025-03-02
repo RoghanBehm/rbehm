@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
                 {repo.name}
               </a>
               <p>{repo.description || "No description available"}</p>
-              <span className={styles.language}>{repo.language}</span>
+              <p className={styles.language}>{repo.language}</p>
             </div>
           </div>
         ))}

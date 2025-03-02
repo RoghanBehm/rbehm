@@ -1,66 +1,26 @@
-import React, { useState, CSSProperties } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+import githubIcon from "../assets/GitHub+logo+inverted.png";
+import styles from "./Header.module.css";
+import folderIcon from "../assets/folder-icon.svg";
 
 const Header: React.FC = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-
   return (
-    <header style={styles.header}>
-      <h1 style={styles.logo}>My App</h1>
-      <nav style={{ ...styles.nav, ...(isOpen ? styles.navOpen : {}) }}>
-        <a href="#" style={styles.navLink}>Home</a>
-        <a href="#" style={styles.navLink}>About</a>
-        <a href="#" style={styles.navLink}>Contact</a>
+    <header className={styles.header}>
+      <Link to="/" className={styles.navLink}>
+        <h2 className={styles.logo}>My App</h2>
+      </Link>
+      
+      <nav className={styles.nav}>
+        <Link to="/github" className={styles.navLink}>
+          <img src={folderIcon} className={styles.ficon} alt="GitHub repositories" />
+        </Link>
+        <a href="https://github.com/RoghanBehm" target="_blank" rel="noopener noreferrer">
+          <img src={githubIcon} className={styles.gicon} alt="GitHub Profile" />
+        </a>
       </nav>
-      <button style={styles.menuButton} onClick={() => setIsOpen(!isOpen)}>
-        ☰
-      </button>
     </header>
   );
 };
-
-const styles: { [key: string]: CSSProperties } = {
-  header: {
-    display: "flex",
-    width: "100%",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "10px 0px",
- 
-    color: "white",
-  },
-  logo: {
-    margin: 0,
-    fontSize: "1.5rem",
-    padding: "0 0 0 36px"
-  },
-  nav: {
-    display: "flex",
-    gap: "15px",
-    padding: "0 36px 0 0",
-  },
-  navOpen: {
-    flexDirection: "column",
-    position: "absolute",
-    top: "50px",
-    right: "10px",
-
-    padding: "10px",
-    borderRadius: "5px",
-  },
-  navLink: {
-    color: "white",
-    textDecoration: "none",
-    fontSize: "1rem",
-  },
-  menuButton: {
-    display: "none",
-    fontSize: "1.5rem",
-    background: "none",
-    border: "none",
-    color: "white",
-    cursor: "pointer",
-  },
-};
-
 
 export default Header;

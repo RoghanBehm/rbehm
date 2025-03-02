@@ -1,0 +1,69 @@
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    color: white;
+}
+
+.gicon {
+    height: auto;
+    width: 5em;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+
+}
+
+.gicon:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.ficon {
+    height: auto;
+    width: 3em;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    
+}
+
+.ficon:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.5rem;
+    padding-left: 36px;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+    padding-right: 36px;
+}
+
+.navOpen {
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menuButton {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
