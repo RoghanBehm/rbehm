@@ -1,4 +1,6 @@
 import placeholderPic from './assets/gorilla boat 2.jpg';
+import minesweeperGif from './assets/minesweeper_demo.gif';
+import fueltoolGif from './assets/fuel_tool_demo.gif';
 import styles from "./home.module.css";
 function Home() {
     return (
@@ -59,7 +61,7 @@ function Home() {
                     {/* Project 1 */}
                     <div className={styles.projectItem}>
                         <div className={styles.projectImage}>
-                            <img src="./assets/minesweeper.png" alt="Minesweeper Multiplayer Game" />
+                            <img src={minesweeperGif} alt="Minesweeper Multiplayer Game" />
                         </div>
                         <div className={styles.projectContent}>
                             <p className={styles.projectTitle}>Networked Multiplayer Minesweeper</p>
@@ -79,7 +81,7 @@ function Home() {
                     {/* Project 2 */}
                     <div className={styles.projectItem}>
                         <div className={styles.projectImage}>
-                            <img src="./assets/fuel-tracker.png" alt="Fuel Price Tracker App" />
+                            <img src={fueltoolGif} alt="Fuel Price Tracker App" />
                         </div>
                         <div className={styles.projectContent}>
                             <p className={styles.projectTitle}>Fuel Price Tracker</p>

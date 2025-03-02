@@ -7,7 +7,7 @@ import folderIcon from "../assets/folder-icon.svg";
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
-      <Link to="/" className={styles.navLink}>
+      <Link to="/rbehm" className={styles.navLink}>
         <h2 className={styles.logo}>My App</h2>
       </Link>
       

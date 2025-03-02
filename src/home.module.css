@@ -110,12 +110,11 @@ h3.sectionTitle {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    flex-direction: column-reverse;
     gap: 20px;
 }
 
 .projectImage {
-    width: 150px;
-    height: 150px;
     overflow: hidden;
     border-radius: 8px;
     flex-shrink: 0;
