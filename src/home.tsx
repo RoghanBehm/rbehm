@@ -1,4 +1,4 @@
-import placeholderPic from './assets/gorilla boat 2.jpg';
+import profilePic from './assets/IMG20250303145411.jpg';
 import minesweeperGif from './assets/minesweeper_demo.gif';
 import fueltoolGif from './assets/fuel_tool_demo.gif';
 import styles from "./home.module.css";
@@ -9,7 +9,7 @@ function Home() {
             {/* Profile */}
             <div className={styles.container}>
                 <div className={styles.left}>
-                    <img src={placeholderPic} className={styles.profilePic} alt="A picture of Roghan Behm [currently primatised]" />
+                    <img src={profilePic} className={styles.profilePic} alt="A picture of Roghan Behm" />
                 </div>
                 <div className={styles.right}>
                     <h1>Roghan Behm</h1>
@@ -64,7 +64,7 @@ function Home() {
                             <img src={minesweeperGif} alt="Minesweeper Multiplayer Game" />
                         </div>
                         <div className={styles.projectContent}>
-                            <p className={styles.projectTitle}>Networked Multiplayer Minesweeper</p>
+                            <a href="https://github.com/RoghanBehm/minesweeper"><p className={styles.projectTitle}>Networked Multiplayer Minesweeper</p></a>
                             <p>
                                 Developed a real-time 1v1 multiplayer Minesweeper game using Boost.Asio for networking and SDL2 for rendering.
                                 Features an interactive UI, custom game logic, and synchronized state updates.

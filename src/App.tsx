@@ -12,6 +12,7 @@ function App() {
       <div>
         <Header />
         <Routes>
+        <Route path="/" element={<Home />} />
           <Route path="/rbehm" element={<Home />} />
           <Route path="/github" element={< Projects />} />
         </Routes>
